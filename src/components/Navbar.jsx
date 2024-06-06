@@ -1,8 +1,7 @@
 //import React from 'react'
 import logo from "../assets/divyanshuLogo.png"
-import { FaLinkedin } from "react-icons/fa"
+import { FaLinkedin, FaTwitter } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa"
-import { FaTwitterSquare } from "react-icons/fa"
 import { FaInstagram } from "react-icons/fa"
 import { motion } from "framer-motion"
 
@@ -36,18 +35,46 @@ const Navbar = () => {
           <img className="mx-2 w-20 rounded-2xl" src={logo} alt="logo" />
         </motion.div>
         <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-          <a href="https://www.linkedin.com/in/divyanshu-charak-a1820516a/" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin />
-          </a>
-          <a href="https://github.com/divyanshu144" target="_blank" rel="noopener noreferrer">
-            <FaGithub />
-          </a>
-          <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer">
-            <FaTwitterSquare />
-          </a>
-          <a href="https://www.instagram.com/divyanshu_charak/" target="_blank" rel="noopener noreferrer">
-            <FaInstagram />
-          </a>
+        <motion.a
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                href="https://www.linkedin.com/in/divyanshu-charak-a1820516a/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600"
+              >
+                <FaLinkedin size={30} />
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                href="https://github.com/divyanshu144"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-500"
+              >
+                <FaGithub size={30} />
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                href="https://twitter.com/your-handle"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400"
+              >
+                <FaTwitter size={30} />
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                href="https://www.instagram.com/divyanshu_charak"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-pink-500"
+              >
+                <FaInstagram size={30} />
+              </motion.a>
         </div>
       </nav>
     </div>
