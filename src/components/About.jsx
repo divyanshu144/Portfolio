@@ -37,7 +37,8 @@ const About = () => {
             </p>
           </div>
           <div className="flex justify-center lg:justify-start">
-            <p className="my-2 max-w-xl py-6 text-justify">
+            <p className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-500 bg-clip-text tracking-tight text-transparent
+             my-2 max-w-xl py-6 text-justify ">
               {CONNECT}
             </p>
             
